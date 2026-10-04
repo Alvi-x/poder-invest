@@ -50,7 +50,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={14} className="mt-1 shrink-0 text-gold-500" />
-                <span>info@poderinvestments.co.za</span>
+                <span>info@poderinvest.co.za</span>
               </li>
             </ul>
           </div>

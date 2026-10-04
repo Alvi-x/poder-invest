@@ -4,7 +4,7 @@ import PageShell from "../components/PageShell";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import Button from "../components/Button";
-import { EASE_EDITORIAL } from "../lib/motion";
+// import { EASE_EDITORIAL } from "../lib/motion";
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");

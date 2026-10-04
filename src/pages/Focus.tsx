@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
 import PageShell from "../components/PageShell";
 import Reveal from "../components/Reveal";

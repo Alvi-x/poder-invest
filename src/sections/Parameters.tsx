@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import Reveal from "../components/Reveal";
+// import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import Button from "../components/Button";
 import ParallaxImage from "../components/ParallaxImage";

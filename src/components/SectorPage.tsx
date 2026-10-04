@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import Eyebrow from "./Eyebrow";
-import ImageReveal from "./ImageReveal";
+// import ImageReveal from "./ImageReveal";
 import ClosingCTA from "../sections/ClosingCTA";
 import PageShell from "./PageShell";
 import type { Sector } from "../data/sectors";
