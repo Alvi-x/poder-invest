@@ -1,11 +1,13 @@
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
   variant?: "primary" | "secondary" | "ghost";
   href?: string;
+  to?: string;
   withArrow?: boolean;
   className?: string;
   onClick?: () => void;
@@ -16,6 +18,7 @@ export default function Button({
   children,
   variant = "primary",
   href,
+  to,
   withArrow = true,
   className = "",
   onClick,
@@ -45,6 +48,25 @@ export default function Button({
       )}
     </>
   );
+
+  if (to) {
+    return (
+      <motion.div
+        whileHover={{ y: -2 }}
+        whileTap={{ scale: 0.98 }}
+        transition={{ duration: 0.2 }}
+        className="inline-flex"
+      >
+        <Link
+          to={to}
+          onClick={onClick}
+          className={`${base} ${styles[variant]} ${className}`}
+        >
+          {content}
+        </Link>
+      </motion.div>
+    );
+  }
 
   if (href) {
     return (

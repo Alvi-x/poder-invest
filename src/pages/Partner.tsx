@@ -31,13 +31,13 @@ export default function Partner() {
               label: "Invest with us",
               body: "Poder deploys its own capital directly and alongside aligned co-investors.",
               cta: "Partner With Us",
-              href: "/contact",
+              to: "/contact",
             },
             {
               label: "Raise capital with us",
               body: "Where appropriate, Poder helps established businesses and project sponsors structure and source third-party capital.",
               cta: "Start a Conversation",
-              href: "/contact",
+              to: "/contact",
             },
           ].map((path, i) => (
             <Reveal key={path.label} delay={i * 0.12}>
@@ -47,7 +47,7 @@ export default function Partner() {
                   {path.body}
                 </p>
                 <div className="mt-auto">
-                  <Button href={path.href} variant="ghost">
+                  <Button to={path.to} variant="ghost">
                     {path.cta}
                   </Button>
                 </div>

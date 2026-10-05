@@ -46,7 +46,7 @@ export default function ClosingCTA() {
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <Button href="/contact" variant="primary">
+            <Button to="/contact" variant="primary">
               Start a Conversation
             </Button>
           </Reveal>

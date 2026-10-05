@@ -122,10 +122,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 1.6, ease: EASE_EDITORIAL }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button href="/contact" variant="primary">
+            <Button to="/contact" variant="primary">
               Start a Conversation
             </Button>
-            <Button href="/focus" variant="secondary">
+
+            <Button to="/focus" variant="secondary">
               See Our Investment Focus
             </Button>
           </motion.div>
