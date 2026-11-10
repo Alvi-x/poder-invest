@@ -20,20 +20,76 @@ export default function Footer() {
           <div className="md:col-span-2 md:col-start-6">
             <h3 className="eyebrow mb-5">Company</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/about" className="hover:text-gold-400 transition-colors">About</Link></li>
-              <li><Link to="/focus" className="hover:text-gold-400 transition-colors">Investment Focus</Link></li>
-              <li><Link to="/partner" className="hover:text-gold-400 transition-colors">Partner With Us</Link></li>
-              <li><Link to="/contact" className="hover:text-gold-400 transition-colors">Contact</Link></li>
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/focus"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Investment Focus
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/partner"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Partner With Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
             <h3 className="eyebrow mb-5">Focus</h3>
             <ul className="space-y-3 text-sm">
-              <li><Link to="/focus/manufacturing" className="hover:text-gold-400 transition-colors">Manufacturing</Link></li>
-              <li><Link to="/focus/energy" className="hover:text-gold-400 transition-colors">Energy</Link></li>
-              <li><Link to="/focus/property" className="hover:text-gold-400 transition-colors">Property</Link></li>
-              <li><Link to="/focus" className="hover:text-gold-400 transition-colors">Investment Parameters</Link></li>
+              <li>
+                <Link
+                  to="/focus/manufacturing"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Manufacturing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/focus/energy"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Energy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/focus/property"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Property
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/focus"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  Investment Parameters
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -46,18 +102,32 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={14} className="mt-1 shrink-0 text-gold-500" />
-                <span>+27 (010) 590 6861</span>
+                <a
+                  href="tel:+27105906861"
+                  className="hover:text-gold-500 transition-colors"
+                >
+                  +27 (010) 590 6861
+                </a>
               </li>
+
               <li className="flex items-start gap-3">
                 <Mail size={14} className="mt-1 shrink-0 text-gold-500" />
-                <span>info@poderinvest.co.za</span>
+                <a
+                  href="mailto:info@poderinvest.co.za"
+                  className="hover:text-gold-500 transition-colors"
+                >
+                  info@poderinvest.co.za
+                </a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 flex flex-col md:flex-row justify-between gap-4 text-xs font-mono text-white/40">
-          <span>© 2026 Poder Investments (Pty) Ltd. All rights reserved.</span>
+          <span>
+            © 2026 Poder Investments (Pty) Ltd | 2023/929190/07 | All rights
+            reserved.
+          </span>
           <span>
             Developed with love by{" "}
             <a
