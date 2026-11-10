@@ -7,7 +7,9 @@ import Button from "../components/Button";
 // import { EASE_EDITORIAL } from "../lib/motion";
 
 export default function Contact() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "sent" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "sent" | "error"
+  >("idle");
   const [charCount, setCharCount] = useState(0);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -18,8 +20,10 @@ export default function Contact() {
 
   return (
     <PageShell>
-      <section className="text-white pt-40 pb-20 md:pt-52 md:pb-28 bg-cover bg-center"
-  style={{ backgroundImage: "url('/images/contact.png')" }}>
+      <section
+        className="text-white pt-40 pb-20 md:pt-52 md:pb-28 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/contact.png')" }}
+      >
         <div className="container-editorial">
           {/* <Eyebrow className="mb-8">Contact</Eyebrow> */}
           <h1 className="font-display my-15 text-[clamp(2.5rem,6vw,5.5rem)] leading-[1] tracking-[-0.02em] max-w-4xl">
@@ -36,7 +40,7 @@ export default function Contact() {
             <Reveal>
               <Eyebrow className="mb-6">Send an enquiry</Eyebrow>
               <p className="text-slate-500 leading-relaxed max-w-sm">
-                We review every enquiry and respond within [X] business days.
+                We review every enquiry and respond within 3 business days.
               </p>
             </Reveal>
           </div>
@@ -59,7 +63,14 @@ export default function Contact() {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8" noValidate>
-                  <input type="text" name="_hp" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden="true" />
+                  <input
+                    type="text"
+                    name="_hp"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="hidden"
+                    aria-hidden="true"
+                  />
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <Field label="Name" name="name" required />
